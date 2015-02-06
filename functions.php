@@ -55,8 +55,8 @@ if ( ! function_exists( 'city_setup_features' ) ) {
 		 * Support Custom Background.
 		 */
 		$defaults = array(
-			'default-color' => '',
-			'default-image' => '',
+			'default-color' => '343434',
+			'default-image' => get_template_directory_uri() . '/assets/images/news-background.png',
 		);
 
 		add_theme_support( 'custom-background', $defaults );

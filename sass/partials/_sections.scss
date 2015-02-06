@@ -1,5 +1,4 @@
-.square-bkg {
-  background-image: url("../images/news-background.png");
+.custom-background {
   background-repeat: repeat;
   background-position: left top;
 }
@@ -7,7 +6,7 @@
 .news {
   color: #fff;
   padding: 70px 0;
-  @extend .square-bkg;
+  @extend .custom-background;
   .news-feature {
     background-color: transparent;
     padding-bottom: 50px;
@@ -49,7 +48,7 @@
 .single,
 .category,
 .page {
-  @extend .square-bkg;
+  @extend .custom-background;
   .header { border-bottom: none; }
   main { padding-bottom: 50px; }
 }
