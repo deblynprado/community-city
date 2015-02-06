@@ -1,0 +1,2 @@
+# community-city
+WordPress Theme
