@@ -39,6 +39,7 @@ if ( ! function_exists( 'city_setup_features' ) ) {
 		 * Add post_thumbnails suport.
 		 */
 		add_theme_support( 'post-thumbnails' );
+		set_post_thumbnail_size( 360, 225, true );
 
 		/**
 		 * Add feed link.
