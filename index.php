@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section class="news">
-	<h1 class="sr-only">News</h1>
+	<h1 class="sr-only"><?php _e( "News", "commcitytheme" ); ?></h1>
 	<div class="container">
 
 		<?php

@@ -10,7 +10,7 @@
 						<figure><?php the_post_thumbnail( 'full', array( 'class' => 'img-responsive' ) ); ?></figure>
 						<h2 class="post-title" itemprop="headline"><?php the_title(); ?></h2>
 						<p class="metadata">
-							Publicado por: <a href="" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?php the_author(); ?></span></a> em <span itemprop="datePublished" content="<?php the_date( 'y-m-d' ); ?>"><?php the_date( 'd/m/Y' ); ?></span> na categoria <?php the_category( ', ' ); ?>
+							<?php _e( "Published by:", "commcitytheme" ); ?> <a href="" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?php the_author(); ?></span></a> <?php _e( "at", "commcitytheme" ); ?> <span itemprop="datePublished" content="<?php the_date( 'y-m-d' ); ?>"><?php the_date( 'd/m/Y' ); ?></span> <?php _e( "in category", "commcitytheme" ); ?> <?php the_category( ', ' ); ?>
 						</p>
 					</header>
 					<div class="content" itemprop="articleBody">

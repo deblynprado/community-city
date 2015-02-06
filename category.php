@@ -20,7 +20,7 @@
                 </a>
                 <a href="<?php the_permalink(); ?>"><h2 class="post-title" itemprop="headline"><?php the_title(); ?></h2></a>
                 <p class="metadata sr-only">
-                  Publicado por: <a href="#" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?php the_author(); ?></span></a> em <span itemprop="datePublished" content="2015-01-22"><?php the_date(); ?></span> na categoria <?php the_category( ', ' ); ?>
+                  <?php _e( "Published by:", "commcitytheme" ); ?> <a href="#" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?php the_author(); ?></span></a> <?php _e( "at", "commcitytheme" ); ?> <span itemprop="datePublished" content="2015-01-22"><?php the_date(); ?></span> <?php _e( "in category", "commcitytheme" ); ?> <?php the_category( ', ' ); ?>
                 </p>
               </header>
               <div class="content" itemprop="description">
@@ -41,8 +41,8 @@
                   'end_size'           => 1,
                   'mid_size'           => 2,
                   'prev_next'          => True,
-                  'prev_text'          => '« Mais antigos',
-                  'next_text'          => 'Mais recentes »',
+                  'prev_text'          => '« Recent Posts',
+                  'next_text'          => 'Old Posts »',
                   'type'               => 'plain',
                   'add_args'           => False,
                   'add_fragment'       => '',
@@ -54,7 +54,7 @@
             </div>
           </div>
         <?php else: ?>
-          <p>Henhum post encontrado</p>
+          <p><?php _e( "No posts found", "commcitytheme" ); ?></p>
         <?php endif; ?> ?>
       </div>
 
