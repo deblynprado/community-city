@@ -1,0 +1,16 @@
+aside {
+  color: #fff;
+  .widget {
+    line-height: 25px;
+    &:first-child {
+      .widget-title { margin-top: 0; }
+    }
+  }
+
+  .widget-title {
+    border-bottom: 1px solid #336699;
+    margin: 10px 0;
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+}

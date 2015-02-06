@@ -1,0 +1,15 @@
+.pagination {
+  display: inline;
+  .previous,
+  .next { color: #fff; }
+
+  .next { float: right; }
+}
+
+@media ( max-width: 768px ) {
+  .pagination {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

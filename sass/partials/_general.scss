@@ -1,0 +1,13 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  padding-bottom: 0 !important;
+}
+
+a {
+  &:active,
+  &:hover {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}

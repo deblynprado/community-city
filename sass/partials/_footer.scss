@@ -1,0 +1,12 @@
+.footer {
+  font-weight: 300;
+  background-color: $primary-color;
+  color: #fff;
+  padding: 10px 0;
+  .widget { line-height: 2; }
+
+  .widget-title {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,35 @@
+.header {
+  height: 100%;
+  border-bottom: 2px solid $primary-color;
+
+  .home & {
+    background-image: url( "../images/header.jpg" );
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    padding-top: 50px;
+  }
+
+  .menu-wrapper {
+    width: 100%;
+
+    &.fixed {
+      background-color: rgba( #000, 0.8);
+      border-bottom: 2px solid $primary-color;
+      padding: 20px 0;
+      position: fixed;
+      top: 0;
+      z-index: 2;
+    }
+  }
+
+  .site-title {
+    color: #fff;
+    float: left;
+
+    .highlight {
+      color: $primary-color;
+    }
+  }
+}

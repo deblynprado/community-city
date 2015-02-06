@@ -1,0 +1,17 @@
+nav {
+  float: right;
+  ul { display: inline; }
+
+  li {
+    display: inline;
+    margin: 0 10px;
+    &:first-child { margin-left: 0; }
+
+    &:last-child { margin-right: 0; }
+
+    a {
+      color: #fff;
+      font-weight: 300;
+    }
+  }
+}
