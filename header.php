@@ -29,7 +29,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<header class="header" role="banner">
+	<header class="site-header" role="banner">
+
 		<div class="menu-wrapper fixed">
 			<div class="container">
 				<h1 class="site-title"><span class="highlight">&#60;</span>HTML<span class="highlight">&#62;</span>WP</h1>

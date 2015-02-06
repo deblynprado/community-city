@@ -48,17 +48,7 @@ if ( ! function_exists( 'city_setup_features' ) ) {
 		/**
 		 * Support Custom Header.
 		 */
-		$default = array(
-			'width'         => 0,
-			'height'        => 0,
-			'flex-height'   => false,
-			'flex-width'    => false,
-			'header-text'   => false,
-			'default-image' => '',
-			'uploads'       => true,
-		);
-
-		add_theme_support( 'custom-header', $default );
+		require get_template_directory() . '/inc/custom-header.php';
 
 		/**
 		 * Support Custom Background.
