@@ -33,7 +33,7 @@
 
 		<div class="menu-wrapper fixed">
 			<div class="container">
-				<h1 class="site-title"><span class="highlight">&#60;</span>HTML<span class="highlight">&#62;</span>WP</h1>
+				<h1 class="site-title"><?php bloginfo('name'); ?></h1>
 				<nav>
 					<?php
 						/**
