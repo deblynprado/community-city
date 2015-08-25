@@ -1,5 +1,17 @@
 @import "compass/css3";
 
+// Mixins
+@import "mixins/clearfix";
+@import "mixins/center-block";
+@import "mixins/hide-text";
+
+@import "partials/variables";
+@import 'partials/utilities';
+
+// WordPress default styles
+@import "partials/wordpress";
+
+// Custom Theme Styles
 @import "partials/colors";
 @import "partials/typography";
 @import "partials/general";
