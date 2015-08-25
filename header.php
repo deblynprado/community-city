@@ -29,11 +29,11 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<header class="site-header" role="banner">
+	<header <?php if ( is_front_page() ) { ?> class="site-header" <?php } ?> role="banner">
 
 		<div class="menu-wrapper fixed">
 			<div class="container">
-				<h1 class="site-title"><?php bloginfo('name'); ?></h1>
+				<a href="<?php bloginfo('url'); ?>"><h1 class="site-title"><?php bloginfo('name'); ?></h1></a>
 				<nav>
 					<?php
 						/**

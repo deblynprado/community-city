@@ -1,11 +1,4 @@
-.site-header {
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  min-height: 500px;
-  padding-top: 50px;
-  height: 100%;
-  border-bottom: 2px solid $primary-color;
+header {
   .menu-wrapper {
     width: 100%;
     &.fixed {
@@ -23,4 +16,14 @@
     float: left;
     .highlight { color: $primary-color; }
   }
+}
+
+.site-header {
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  padding-top: 50px;
+  height: 100%;
+  border-bottom: 2px solid $primary-color;
 }
