@@ -1,0 +1,24 @@
+#comments,
+#respond {
+	border-top: 2px solid #336699;
+	background-color: #fff;
+	margin: 0;
+	padding: 15px;
+}
+
+.commentlist {
+	padding-left: 0;
+	list-style: none;
+	.comment-body {
+		padding: 15px;
+	}
+}
+
+.children {
+	background-color: #fff;
+	list-style: none;
+	padding-left: 0;
+	.comment-body { padding-left: 40px; }
+}
+
+#comment { width: 100%; }

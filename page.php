@@ -17,6 +17,7 @@
 						<?php the_content(); ?>
 					</div>
 				</article>
+				<?php comments_template(); ?> 
 			<?php endwhile; ?>
 			<!-- post navigation -->
 		<?php else: ?>
