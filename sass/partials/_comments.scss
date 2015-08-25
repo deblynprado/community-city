@@ -9,16 +9,16 @@
 .commentlist {
 	padding-left: 0;
 	list-style: none;
-	.comment-body {
-		padding: 15px;
-	}
+	.comment-body { padding: 15px; }
 }
 
-.children {
-	background-color: #fff;
-	list-style: none;
-	padding-left: 0;
-	.comment-body { padding-left: 40px; }
+.comment{
+	.children {
+		background-color: #fff;
+		list-style: none;
+		padding-left: 0;
+		.comment-body { padding-left: 40px; }
+	}
 }
 
 #comment { width: 100%; }
