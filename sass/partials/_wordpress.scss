@@ -68,6 +68,10 @@
     color: #666;
 }
 
+.sticky {}
+.screen-reader-text{}
+.bypostauthor{}
+
 // Override the Twitter embed fixed width
 .twitter-tweet-rendered {
     max-width: 100% !important;
@@ -82,7 +86,7 @@
         @extend .pull-left;
         @extend .text-center;
         img {
-            
+
         }
     }
     @for $gallery from 1 through 9 {
@@ -147,13 +151,13 @@ img {
     }
     .comment-content &,
     .widget & {
-        
+
     }
 }
 
 .entry-content p img,
 .wp-caption {
-    
+
     &.alignleft,
     &.alignright,
     &.aligncenter,
@@ -192,7 +196,7 @@ img {
 // Calendar
 //
 .widget_calendar #wp-calendar {
-    
+
     #prev {
         border-right: 0;
         a {
@@ -243,5 +247,5 @@ img {
 // Forms
 // ==========================================================================
 input[name="post_password"] {
-    
+
 }
