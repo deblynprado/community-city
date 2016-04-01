@@ -16,6 +16,18 @@ article {
   p { margin: 10px 0; }
 
   figure, img { max-width: 100%; }
+
+  .tags {
+    color: #333333;
+    list-style: none;
+    padding: 0;
+    margin: 0 10px;
+    overflow: hidden;
+    li {
+      float: left;
+      margin-right: 10px;
+    }
+  }
 }
 
 .category {

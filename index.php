@@ -24,6 +24,7 @@
 						</figure>
 					</div>
 				</div>
+				<?php the_tags( '<ul class="tags"><li>' . __( 'Tags', 'commcitytheme' ) . ':</li><li>', '</li><li>', '</li></ul>' ); ?>
 			</article>
 		<?php endwhile; endif; endif; wp_reset_postdata(); ?>
 
@@ -37,6 +38,7 @@
 							</figure>
 							<h3 class="title" itemprop="headline"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
 							<span class="excerpt" itemprop="articleBody"><?php the_excerpt(); ?></span>
+							<?php the_tags( '<ul class="tags"><li>' . __( 'Tags', 'commcitytheme' ) . ':</li><li>', '</li><li>', '</li></ul>' ); ?>
 						</article>
 					</div>
 				<?php endwhile; ?>

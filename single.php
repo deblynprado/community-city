@@ -13,6 +13,7 @@
 			<div class="content" itemprop="articleBody">
 				<?php the_content(); ?>
 			</div>
+			<?php the_tags( '<ul class="tags"><li>' . __( 'Tags', 'commcitytheme' ) . ':</li><li>', '</li><li>', '</li></ul>' ); ?>
 		</article>
 	<?php endwhile; ?>
 	<!-- post navigation -->
