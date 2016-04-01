@@ -16,6 +16,7 @@
 					the_tags( '<ul class="tags"><li>' . __( 'Tags', 'commcitytheme' ) . ':</li><li>', '</li><li>', '</li></ul>' );
 					comment_form();
 					wp_list_comments();
+					paginate_comments_links();
 				?>
 			</div>
 		</article>
