@@ -14,6 +14,12 @@
 				<?php
 					the_content();
 					the_tags( '<ul class="tags"><li>' . __( 'Tags', 'commcitytheme' ) . ':</li><li>', '</li><li>', '</li></ul>' );
+				 	$args_link_pages = array(
+						'before'           => '<p>' . __( 'Pages:', 'commcitytheme' ),
+						'nextpagelink'     => __( 'Next page', 'commcitytheme' ),
+						'previouspagelink' => __( 'Previous page', 'commcitytheme' ),
+					);
+					wp_link_pages( $args_link_pages );
 					comment_form();
 					wp_list_comments();
 					paginate_comments_links();
