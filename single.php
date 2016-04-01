@@ -2,7 +2,7 @@
 <div class="container">
 	<div class="col-md-8 primary">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<article itemscope itemtype="http://schema.org/BlogPosting">
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/BlogPosting">
 			<header>
 				<figure><?php the_post_thumbnail( 'full', array( 'class' => 'img-responsive' ) ); ?></figure>
 				<h2 class="post-title" itemprop="headline"><?php the_title(); ?></h2>

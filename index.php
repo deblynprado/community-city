@@ -10,7 +10,7 @@
 
 				if ( $sticky_query->have_posts() ) : while ( $sticky_query->have_posts() ) : $sticky_query->the_post();
 		?>
-			<article class="news-feature" itemscope itemtype="http://schema.org/BlogPosting">
+			<article id="post-<?php the_ID(); ?>" <?php post_class( 'news-feature' ); ?> itemscope itemtype="http://schema.org/BlogPosting">
 				<div class="row">
 					<h2 class="title text-center" itemprop="headline"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 				</div>
@@ -32,7 +32,7 @@
 			<div class="row">
 				<?php while ( have_posts() ) : the_post(); ?>
 					<div class="col-md-4">
-						<article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+						<article id="post-<?php the_ID(); ?>" <?php post_class( 'article' ); ?> itemscope itemtype="http://schema.org/BlogPosting">
 							<figure class="thumb">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail( 'full', array( 'class' => 'img-responsive' ) ); ?></a>
 							</figure>
