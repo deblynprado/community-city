@@ -90,7 +90,6 @@ if ( ! function_exists( 'city_setup_features' ) ) {
 		add_editor_style( array( 'assets/css/editor-style.css', 'genericons/genericons.css' ) );
 	}
 }
-
 add_action( 'after_setup_theme', 'city_setup_features' );
 
 /**
