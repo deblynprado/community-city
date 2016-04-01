@@ -11,9 +11,14 @@
 				</p>
 			</header>
 			<div class="content" itemprop="articleBody">
-				<?php the_content(); ?>
+				<?php
+					the_content();
+					the_tags( '<ul class="tags"><li>' . __( 'Tags', 'commcitytheme' ) . ':</li><li>', '</li><li>', '</li></ul>' );
+					comment_form();
+					wp_list_comments();
+					paginate_comments_links();
+				?>
 			</div>
-			<?php the_tags( '<ul class="tags"><li>' . __( 'Tags', 'commcitytheme' ) . ':</li><li>', '</li><li>', '</li></ul>' ); ?>
 		</article>
 	<?php endwhile; ?>
 	<!-- post navigation -->
