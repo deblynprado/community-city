@@ -82,9 +82,14 @@ if ( ! function_exists( 'city_setup_features' ) ) {
 		 * provide it for us.
 		 */
 		add_theme_support( 'title-tag' );
+
+		/*
+		 * This theme styles the visual editor to resemble the theme style,
+		 * specifically font, colors, icons, and column width.
+		 */
+		add_editor_style( array( 'assets/css/editor-style.css', 'genericons/genericons.css' ) );
 	}
 }
-
 add_action( 'after_setup_theme', 'city_setup_features' );
 
 /**
