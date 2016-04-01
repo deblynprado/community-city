@@ -33,7 +33,7 @@
 
 		<div class="menu-wrapper fixed">
 			<div class="container">
-				<a href="<?php bloginfo('url'); ?>"><h1 class="site-title"><?php bloginfo('name'); ?></h1></a>
+				<a href="<?php echo esc_url( home_url() ); ?>"><h1 class="site-title"><?php bloginfo('name'); ?></h1></a>
 				<nav>
 					<?php
 						/**
