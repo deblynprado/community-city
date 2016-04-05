@@ -168,14 +168,14 @@ function city_enqueue_scripts() {
 	wp_enqueue_style( 'city-style', $template_url . '/assets/css/style.css', array(), null, 'all' );
 
 	// Bootstrap styles
-	wp_enqueue_style( 'boostrap-style', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', array(), null, 'all' );
+	wp_enqueue_style( 'boostrap-style', $template_url . '/assets/css/bootstrap.min.css', array(), null, 'all' );
 
 
 	// jQuery
 	wp_enqueue_script( 'jquery' );
 
 	// Bootstrap scripts
-	wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js', array( 'jquery' ), null, true );
+	wp_enqueue_script( 'bootstrap-js', $template_url . '/assets/js/bootstrap.min.js', array( 'jquery' ), null, true );
 
 	// General scripts
 	wp_enqueue_script( 'city-js', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), null, true );
