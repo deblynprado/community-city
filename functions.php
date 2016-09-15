@@ -181,7 +181,7 @@ function city_enqueue_scripts() {
 	wp_enqueue_script( 'city-js', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), null, true );
 
 	// Loads Odin main stylesheet.
-	wp_enqueue_style( 'odin-style', get_stylesheet_uri(), array(), null, 'all' );
+	wp_enqueue_style( 'community-city-style', get_stylesheet_uri(), array(), null, 'all' );
 
 	// Load Thread comments WordPress script.
 	if ( is_singular() && get_option( 'thread_comments' ) ) {
