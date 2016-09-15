@@ -16,6 +16,12 @@ header {
     float: left;
     .highlight { color: $primary-color; }
   }
+  .site-description {
+    clear: both;
+    color: #ffffff;
+    font-size: 16px;
+    .highlight { color: $primary-color; }
+  }
 }
 
 .site-header {
